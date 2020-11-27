@@ -1,0 +1,10 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+
+# Github Repositories
+Host your_repo.github.com
+    HostName github.com
+    IdentityFile ~/Path/To/Your/Priv/Key
+    IdentitiesOnly yes
+    
+# Add your deploy keys in the git project settings then
+# Clone: `git remote add origin git@your_repo.github.com:you_git_username/repo.git
